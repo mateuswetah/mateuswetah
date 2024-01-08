@@ -1,0 +1,11 @@
+body,
+.editor-styles-wrapper {
+    --wp--preset--color--color-lightest: var(--wp--preset--color--sky-lightest);
+    --wp--preset--color--color-lighter: var(--wp--preset--color--sky-lighter);
+    --wp--preset--color--color-light: var(--wp--preset--color--sky-light);
+    --wp--preset--color--color-dark: var(--wp--preset--color--sky-dark);
+    --wp--preset--color--color-darker: var(--wp--preset--color--sky-darker);
+    --wp--preset--color--color-darkest: var(--wp--preset--color--sky-darkest);
+    --wp--preset--gradient--color-0: linear-gradient(180deg, transparent 0%, var(--wp--preset--color--sky-light) 0%);
+    --wp--preset--gradient--color-90: linear-gradient(180deg, transparent 90%, var(--wp--preset--color--sky-light) 10%);
+}
