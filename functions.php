@@ -18,6 +18,10 @@ function mateuswetah_enqueue_assets() {
 
 	// Unregister styles not used
 	wp_deregister_style( 'roboto-fonts-css' );
+	
+	if ( ! is_admin() )
+		wp_deregister_script('jquery');
+
 }
 add_action( 'wp_enqueue_scripts', 'mateuswetah_enqueue_assets' );
 
@@ -49,6 +53,7 @@ function mateuswetah_add_file_types_to_uploads($file_types){
 	return $file_types;
 }
 add_filter('upload_mimes', 'mateuswetah_add_file_types_to_uploads');
+
 
 // Block Styles
 require get_stylesheet_directory() . '/inc/block-styles.php';
