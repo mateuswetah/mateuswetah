@@ -90,7 +90,7 @@ a:focus {
 }
 
 /* Animations */
-@media screen and (prefers-reduced-motion: no-preference) and (max-width: 1078px) {
+@media screen and (prefers-reduced-motion: no-preference) and (min-width: 768px) {
     .wp-block-group.is-style-animated {
         animation: .8s ease-in-out 0s 1 mateusWetahAppear;
     }
