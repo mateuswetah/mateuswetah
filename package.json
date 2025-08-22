@@ -1,0 +1,41 @@
+{
+  "name": "mateuswetah-theme",
+  "version": "1.1.1",
+  "description": "WordPress FSE theme for MateusWetah website with wp-scripts build system",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md": "wp-scripts lint-md",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "theme-zip": "./build-theme.sh",
+    "clean": "rimraf build src",
+    "dev": "wp-scripts start --webpack-copy-php",
+    "build:analyze": "wp-scripts build --analyze"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "fse",
+    "wp-scripts",
+    "build"
+  ],
+  "author": "wetah",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.22.0",
+    "autoprefixer": "^10.4.21",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "postcss-preset-env": "^10.2.4",
+    "rimraf": "^5.0.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

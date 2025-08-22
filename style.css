@@ -7,7 +7,7 @@ Description: My WordPress theme for the MateusWetah website
 Requires at least: 6.2
 Tested up to: 6.4.1
 Requires PHP: 5.7
-Version: 1.0.7
+Version: 1.1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mateuswetah
@@ -287,6 +287,14 @@ header.wp-block-template-part .wp-block-a11y-buttons-a11y-button > button:focus 
 .single-tnc_col_1051_item .tainacan-relationship-group .tainacan-metadatum .label {
     display: none;
     visibility: hidden;
+}
+.tainacan-relationship-group .multivalue-separator {
+    height: 1px;
+    width: calc(100% - 40px - 1rem);
+    display: block;
+    font-size: 0;
+    background: var(--wp--preset--color--color-lighter);
+    margin: 0.5rem auto 1rem auto;
 }
 .tnc_col_1021_item .wp-block-tainacan-item-gallery .tainacan-media-component__swiper-main .swiper-slide-content a:first-of-type,
 .tnc_col_1021_item .wp-block-tainacan-item-gallery .tainacan-media-component__swiper-main .swiper-slide-content p:first-of-type,
